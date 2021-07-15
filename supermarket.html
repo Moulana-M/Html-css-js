@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Super Market Project</title>
+	<link rel="stylesheet" type="text/css" href="css/market.css">
+	<script src="https://kit.fontawesome.com/33d11e8ce8.js" crossorigin="anonymous"></script>
+
+<script>
+function stickyMenu(){
+	var sticky=document.getElementBYId('sticky')
+
+
+if (window.pageYOffset > 220){
+	sticky.classList.add('sticky');
+}
+else
+{
+
+        sticky.classList.remove('sticky');
+}
+
+window.onscroll = function() {
+	stickyMenu();
+}
+}
+</script>
+
+
+
+
+
+
+
+</head>
+<body>
+<div class="parallax">
+<div class="title"> Eat Fresh</div>
+</div>
+<div class= "menu" id="sticky">
+<ul class="menu-ul">
+<a href="#" class="a-menu"><li>Home</li></a>
+<a href="#deals" class="a-menu"><li>Deals</li></a>
+<a href="# vegtables" class="a-menu"><li>Vegtables</li></a>
+<a href="#fruits" class="a-menu"><li>Fruits</li></a>
+<a href="#atme" class="a-menu"><li>Meat</li></a>
+<a href="#" class="a-menu"><li>Cart</li></a>
+
+</ul>
+
+<div class="search-box">
+	<form>
+ <input type="text" placeholder="Search..."name="Search" class="search-input"/>
+ <button type="submit"><i class="fas fa-search"></i></button>
+	</form>
+	</div>
+
+</div>
+
+<div class="container">
+<a href="vegtables">
+	<div class="categories">
+<img src="images/carrot.jpg" class="iteam-image">
+
+<div class="image-title"> Vegtables..</div>
+</div>
+</a>
+
+<a href="Fruits">
+	<div class="categories">
+<img src="https://post.healthline.com/wp-content/uploads/sites/3/2020/02/271157_2200-732x549.jpg" class="iteam-image">
+	
+
+<div class="image-title"> Fruits..</div>
+</div>
+</a>
+<a href="meat">
+	<div class="categories">
+<img src="images/chicken.jpg" class="iteam-image">
+	
+
+<div class="image-title">meat& seefood..</div>
+</div>
+</a>
+<a href="deals">
+	<div class="categories">
+<img src="https://img.pixers.pics/pho_wat(s3:700/FO/64/85/64/40/700_FO64856440_9876b916f8d66175e10fd614c1d26571.jpg,576,700,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,356,650,jpg)/stickers-apple-green-fruit-water-splash-liquid.jpg.jpg" class="iteam-image">
+	
+
+<div class="image-title"> Deals..</div>
+</div>
+</a>
+
+</div>
+<div class=deals-container id="deals">
+<div class="parallax">
+	<div class="title">DEALS</div>
+</div>
+<div class="deal">
+	save 20% on min-purchase of $149 on vegtables<br>
+	<button class="coupon-btn"> Add coupon</button>
+</div>
+<div class="deal">
+	save 10% on min-purchase of $179 on fruits<br>
+	<button class="coupon-btn"> Add coupon</button>
+</div>
+<div class="deal">
+	save 15% on min-purchase of $199 on meet<br>
+	<button class="coupon-btn"> Add coupon</button>
+</div>
+</div>
+<div class="deals-container" id="vegtables">
+	<div class="parallax">
+		<div class="title">VEGTABLES</div>
+	</div>
+	<div class="iteams">
+		<div class="images">
+			<img src="images/tomoto.jpg" class="iteam-image-size"/>
+		</div>
+		<div class="description">
+			<b>Tomoto</b><br>
+			<div class="iteam-select">
+				price: $2.99/250grams
+			</div>
+			<label>QTY:</label>
+			<select class="iteam-select">
+				<option>250 grams</option>
+				<option>500 grams</option>
+				<option>750 grams</option>
+				<option>1000 grams</option>
+</select><br>
+<button class="buynow-btn">Buy now</button>
+</div>
+</div>
+<div class="iteams">
+		<div class="images">
+			<img src="https://sc04.alicdn.com/kf/U0b318db8313e4c389110a2eba3dfdf1bn.jpg" class="iteam-image-size"/>
+		</div>
+		<div class="description">
+			<b>Organic Ogra</b><br>
+			<div class="iteam-select">
+				price: $2.99/250grams
+			</div>
+			<label>QTY:</label>
+			<select class="iteam-select">
+				<option>250 grams</option>
+				<option>500 grams</option>
+				<option>750 grams</option>
+				<option>1000 grams</option>
+</select><br>
+<button class="buynow-btn">Buy now</button>
+</div>
+</div>
+<div class="iteams">
+		<div class="images">
+			<img src="https://www.deccanherald.com/sites/dh/files/styles/article_detail/public/articleimages/2020/09/01/file7c1zetfc9cn35kudafg-880550-1598901301.jpg?itok=HxiZ_U1F" class="iteam-image-size"/>
+		</div>
+		<div class="description">
+			<b>Organic Spinch</b><br>
+			<div class="iteam-select">
+				price: $2.99/250grams
+			</div>
+			<label>QTY:</label>
+			<select class="iteam-select">
+				<option>250 grams</option>
+				<option>500 grams</option>
+				<option>750 grams</option>
+				<option>1000 grams</option>
+</select><br>
+<button class="buynow-btn">Buy now</button>
+</div>
+</div>
+<div class="iteams">
+		<div class="images">
+			<img src="https://assets.sentinelassam.com/h-upload/2021/03/30/215040-india.webp?w=400&dpr=2.6" class="iteam-image-size"/>
+		</div>
+		<div class="description">
+			<b>Indian Onion</b><br>
+			<div class="iteam-select">
+				price: $2.99/250grams
+			</div>
+			<label>QTY:</label>
+			<select class="iteam-select">
+				<option>250 grams</option>
+				<option>500 grams</option>
+				<option>750 grams</option>
+				<option>1000 grams</option>
+</select><br>
+<button class="buynow-btn">Buy now</button>
+</div>
+</div>
+<div class="iteams">
+		<div class="images">
+			<img src="https://i1.wp.com/www.groceryuncle.com/wp-content/uploads/2019/06/fresh-green-chilli-500x500-1.jpg?fit=500%2C500&ssl=1" class="iteam-image-size"/>
+		</div>
+		<div class="description">
+			<b>Green Chilli</b><br>
+			<div class="iteam-select">
+				price: $2.99/250grams
+			</div>
+			<label>QTY:</label>
+			<select class="iteam-select">
+				<option>250 grams</option>
+				<option>500 grams</option>
+				<option>750 grams</option>
+				<option>1000 grams</option>
+</select><br>
+<button class="buynow-btn">Buy now</button>
+</div>
+</div>
+<div class="iteams">
+		<div class="images">
+			<img src="https://cdn.shopify.com/s/files/1/1022/7453/products/beet-root.jpg?v=1610477918" class="iteam-image-size"/>
+		</div>
+		<div class="description">
+			<b>Beetroot</b><br>
+			<div class="iteam-select">
+				price: $2.99/250grams
+			</div>
+			<label>QTY:</label>
+			<select class="iteam-select">
+				<option>250 grams</option>
+				<option>500 grams</option>
+				<option>750 grams</option>
+				<option>1000 grams</option>
+</select><br>
+<button class="buynow-btn">Buy now</button>
+</div>
+</div>
+</div>
+<div class="deals-container" id="Fruits">
+	<div class="parallax">
+		<div class="title">FRUITS</div>
+	</div>
+	<div class="iteams">
+		<div class="images">
+			<img src="https://i0.wp.com/cdn-prod.medicalnewstoday.com/content/images/articles/322/322096/mangoes-chopped-and-fresh.jpg?w=1155&h=1541" class="iteam-image-size"/>
+		</div>
+		<div class="description">
+			<b>Mango</b><br>
+			<div class="iteam-select">
+				price: $2.99/250grams
+			</div>
+			<label>QTY:</label>
+			<select class="iteam-select">
+				<option>250 grams</option>
+				<option>500 grams</option>
+				<option>750 grams</option>
+				<option>1000 grams</option>
+</select><br>
+<button class="buynow-btn">Buy now</button>
+</div>
+</div>
+	<div class="iteams">
+		<div class="images">
+			<img src="https://cdn.theculturetrip.com/wp-content/uploads/2018/03/origins-of-the-word-orange.jpg" class="iteam-image-size"/>
+		</div>
+		<div class="description">
+			<b>Orange</b><br>
+			<div class="iteam-select">
+				price: $2.99/250grams
+			</div>
+			<label>QTY:</label>
+			<select class="iteam-select">
+				<option>250 grams</option>
+				<option>500 grams</option>
+				<option>750 grams</option>
+				<option>1000 grams</option>
+</select><br>
+<button class="buynow-btn">Buy now</button>
+</div>
+</div>
+
+
+	<div class="iteams">
+		<div class="images">
+			<img src="https://i0.wp.com/www.eatthis.com/wp-content/uploads/media/images/ext/861845164/sliced-bananas.jpg?resize=640%2C360&ssl=1" class="iteam-image-size"/>
+		</div>
+		<div class="description">
+			<b>Banana</b><br>
+			<div class="iteam-select">
+				price: $2.99/250grams
+			</div>
+			<label>QTY:</label>
+			<select class="iteam-select">
+				<option>250 grams</option>
+				<option>500 grams</option>
+				<option>750 grams</option>
+				<option>1000 grams</option>
+</select><br>
+<button class="buynow-btn">Buy now</button>
+</div>
+</div>
+
+	<div class="iteams">
+		<div class="images">
+			<img src="https://post.healthline.com/wp-content/uploads/2020/09/jackfruit-on-plate-thumb-732x549.jpg" class="iteam-image-size"/>
+		</div>
+		<div class="description">
+			<b>Jack Fruit</b><br>
+			<div class="iteam-select">
+				price: $2.99/250grams
+			</div>
+			<label>QTY:</label>
+			<select class="iteam-select">
+				<option>250 grams</option>
+				<option>500 grams</option>
+				<option>750 grams</option>
+				<option>1000 grams</option>
+</select><br>
+<button class="buynow-btn">Buy now</button>
+</div>
+</div>
+<div class="iteams">
+		<div class="images">
+			<img src="https://i2.wp.com/ceklog.kindel.com/wp-content/uploads/2013/02/firefox_2018-07-10_07-50-11.png?fit=641%2C618&ssl=1" class="iteam-image-size"/>
+		</div>
+		<div class="description">
+			<b>Apple</b><br>
+			<div class="iteam-select">
+				price: $2.99/250grams
+			</div>
+			<label>QTY:</label>
+			<select class="iteam-select">
+				<option>250 grams</option>
+				<option>500 grams</option>
+				<option>750 grams</option>
+				<option>1000 grams</option>
+</select><br>
+<button class="buynow-btn">Buy now</button>
+</div>
+</div>
+<div class="iteams">
+		<div class="images">
+			<img src="https://familyspice.com/wp-content/uploads/2019/11/how-cut-pomegranate-1200-735x735.jpg" class="iteam-image-size"/>
+		</div>
+		<div class="description">
+			<b>Pomogranate</b><br>
+			<div class="iteam-select">
+				price: $2.99/250grams
+			</div>
+			<label>QTY:</label>
+			<select class="iteam-select">
+				<option>250 grams</option>
+				<option>500 grams</option>
+				<option>750 grams</option>
+				<option>1000 grams</option>
+</select><br>
+<button class="buynow-btn">Buy now</button>
+</div>
+</div>
+<div class="deals-container" id="Fruits">
+	<div class="parallax">
+		<div class="title">MEAT & SEEFOOD..</div>
+	</div>
+	<div class="iteams">
+		<div class="images">
+			<img src="https://zootecnicainternational.com/wp-content/uploads/2016/06/Water-holding-poultry-meat-.jpg" class="iteam-image-size"/>
+		</div>
+		<div class="description">
+			<b>Chicken</b><br>
+			<div class="iteam-select">
+				price: $2.99/250grams
+			</div>
+			<label>QTY:</label>
+			<select class="iteam-select">
+				<option>250 grams</option>
+				<option>500 grams</option>
+				<option>750 grams</option>
+				<option>1000 grams</option>
+</select><br>
+<button class="buynow-btn">Buy now</button>
+</div>
+</div>
+<div class="iteams">
+		<div class="images">
+			<img src="https://cholas.in/wp-content/uploads/2020/06/Meat-02.jpeg" class="iteam-image-size"/>
+		</div>
+		<div class="description">
+			<b>MUTTON..</b><br>
+			<div class="iteam-select">
+				price: $2.99/250grams
+			</div>
+			<label>QTY:</label>
+			<select class="iteam-select">
+				<option>250 grams</option>
+				<option>500 grams</option>
+				<option>750 grams</option>
+				<option>1000 grams</option>
+</select><br>
+<button class="buynow-btn">Buy now</button>
+</div>
+</div>
+<div class="iteams">
+		<div class="images">
+			<img src="https://saltandlighttv.org/blog/wp-content/uploads/2018/02/fish_blog.jpg" class="iteam-image-size"/>
+		</div>
+		<div class="description">
+			<b>Fish..</b><br>
+			<div class="iteam-select">
+				price: $2.99/250grams
+			</div>
+			<label>QTY:</label>
+			<select class="iteam-select">
+				<option>250 grams</option>
+				<option>500 grams</option>
+				<option>750 grams</option>
+				<option>1000 grams</option>
+</select><br>
+<button class="buynow-btn">Buy now</button>
+</div>
+</div>
+</div>
+<div class="parallax">
+	<div class="footer">
+		<div class="quick-links">
+			<div> Locations</div>
+			<ul>
+				<li><a href="" class="a-links">Address 1</a></li>
+				<li><a href="" class="a-links">Address 2</a></li>
+				<li><a href="" class="a-links">Address 3</a></li>
+			</ul>
+		</div>
+		<div class="quick-links">
+			<div>Careers</div>
+			<ul>
+				<li><a href="" class="a-links">Packing staff</a></li>
+				<li><a href="" class="a-links">Delivary Agents</a></li>
+				<li><a href="" class="a-links">Shelf Fillers</a></li>
+			</ul>
+		</div>
+		<div class="quick-links">
+			<div> Quick-links</div>
+			<ul>
+				<li><a href="" class="a-links">Contact US</a></li>
+				<li><a href="" class="a-links">Faq</a></li>
+				<li><a href="" class="a-links">Help-line</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
