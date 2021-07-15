@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pepsi Landing Page</title>
+	<link rel="stylesheet" type="text/css" href="css/pepsi.css">
+</head>
+<body>
+<section class="sec">
+<header>
+	<h2><i>PEPSI</i><span>.</span></h2>
+		<ul>
+      <li> <a href="#">Home</a></li>
+      <li> <a href="#">Products</a></li>
+      <li> <a href="#">What's New</a></li>
+      <li> <a href="#">Newsletter</a></li>
+      <li> <a href="#">Contact</a></li>
+</ul>
+</header>
+<div class="content">
+	<div class="textbox">
+		<h2>That's What<br><span> I like</span></h2>
+		<p> This product made in america. its very energy for good health. there are many people drinking this kind off cooldrinks</p>
+		<a href="#"> View All Products</a>
+	</div>
+	<div class="imgbox">
+		<img src="images/pepsi1.png" class="pepsi">
+	</div>
+</div>
+<ul class="thumb">
+	<li><img src="images/pepsi1.png" onclick="imgSlider('images/pepsi1.png');changeBgcolor('#0062be')"></li>
+	<li><img src="images/pep3.png" onclick="imgSlider('images/pep3.png');changeBgcolor('#e60c2c')"></li>
+	<li> <img src="images/pep4.png" onclick="imgSlider('images/pep4.png');changeBgcolor('#1e1e1e')"></li>
+</ul>
+
+</section>
+<script type="text/javascript">
+	function imgSlider(anything){
+	document.querySelector('.pepsi').src = anything;
+	}
+function changeBgcolor(color)
+{
+	const sec = document.querySelector('.sec');
+	sec.style.background = color;
+}
+
+</script>
+</body>
+</html>
