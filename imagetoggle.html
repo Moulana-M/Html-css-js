@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Slider Toggle</title>
+	<link rel="stylesheet" type="text/css" href="css/imagetoggle.css">
+</head>
+<body>
+<header>
+<a href="#" class="logo"> Product</a>
+<ul>
+	<li><a href="#"> Home</a></li>
+	<li><a href="#"> About</a></li>
+	<li><a href="#"> Contact</a></li>
+	<li><a href="#"> Store</a></li>
+
+
+	</ul>
+
+
+</header>
+<section class="banner">
+<div class="imgbox">
+<img src="https://www.pngkey.com/png/full/373-3739503_10-top-bottom-bottom-of-dc-shoes.png" class="active">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/HOUGHTON_%2C_Triple_Victo_%2C_1914_%2C_shutter_PROSCH_MFG%2C_Triplex_%2817143509932%29.jpg/1200px-HOUGHTON_%2C_Triple_Victo_%2C_1914_%2C_shutter_PROSCH_MFG%2C_Triplex_%2817143509932%29.jpg">
+<img src="https://i.pinimg.com/originals/c3/31/36/c331366f34ae12c68c977a7daff47dc8.jpg">
+<img src="https://etimg.etb2bimg.com/photo/71884644.cms">
+
+</div>
+
+<ul class="controls">
+
+<li onclick = "prevslide();"></li>
+<li onclick = "nextslide();"></li>
+
+
+
+</ul>
+	</section>
+<script type="text/javascript">
+	
+const imgbox = document.querySelector('.imgbox');
+const slides = imgbox.getElementsByTagName('img');
+var i = 0;
+function nextslide(){
+	slides[i].classList.remove('active');
+	i = (i+ 1) % slides.length;
+	slides[i].classList.add('active');
+}
+function prevslide(){
+	slides[i].classList.remove('active');
+	i = (i- 1 + slides.length) % slides.length;
+	slides[i].classList.add('active');
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
